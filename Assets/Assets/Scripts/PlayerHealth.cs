@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 1;
     public float currentHealth;
     public Image healthBar;
+    public GameObject losepanel;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Time.timeScale = 0;
+        losepanel.SetActive(true); 
         Debug.Log("GameOver");
     }
 
