@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerHealth : MonoBehaviour
+{
+    public int maxHealth = 100;
+    private int currentHealth;
+    public GameObject GameOverPanel;
+    private AudioSource PlayerAudio;
+    public AudioClip damage;
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentHealth = maxHealth;
+        GameOverPanel.SetActive(false);
+        Time.timeScale = 1;
+        PlayerAudio = GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void TakeDamage(int damageAmount)
+    {
+        currentHealth -= damageAmount;
+        PlayerAudio.clip = damage;
+        PlayerAudio.Play();
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Time.timeScale = 0;
+        GameOverPanel.SetActive(true);
+    }
+}
