@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2170.138, g: 2283.51, b: 3356.4458, a: 1}
+  m_IndirectSpecularColor: {r: 2170.512, g: 2284.0354, b: 3357.942, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16616,6 +16616,7 @@ MonoBehaviour:
   countdownText: {fileID: 0}
   wheelTransforms: []
   wheelColliders: []
+  totalLaps: 3
 --- !u!1 &617581481
 GameObject:
   m_ObjectHideFlags: 0
@@ -40031,6 +40032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5490658, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
+      propertyPath: m_Mass
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 10830420, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: m_Intensity
       value: 47.746464
@@ -60247,6 +60252,7 @@ MonoBehaviour:
   countdownText: {fileID: 513733194}
   wheelTransforms: []
   wheelColliders: []
+  totalLaps: 3
 --- !u!4 &858744290976053251
 Transform:
   m_ObjectHideFlags: 0
@@ -67780,6 +67786,7 @@ MonoBehaviour:
   countdownText: {fileID: 513733194}
   wheelTransforms: []
   wheelColliders: []
+  totalLaps: 3
 --- !u!33 &5817688736004068604
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -71676,6 +71683,7 @@ MonoBehaviour:
   countdownText: {fileID: 513733194}
   wheelTransforms: []
   wheelColliders: []
+  totalLaps: 3
 --- !u!4 &8915256119067697771
 Transform:
   m_ObjectHideFlags: 0
