@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1619.8469, g: 1729.8655, b: 2568.508, a: 1}
+  m_IndirectSpecularColor: {r: 1485.9718, g: 1615.971, b: 2410.1917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6740,6 +6740,74 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7759331768739107841, guid: c81979d35420b3047acdf0eede589dcf, type: 3}
+--- !u!1 &389837395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 389837397}
+  - component: {fileID: 389837396}
+  m_Layer: 0
+  m_Name: Local volumetric fog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &389837396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389837395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fbb15bf92b84f40a1eb030765b5afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+    albedo: {r: 1, g: 1, b: 1, a: 1}
+    meanFreePath: 60
+    blendingMode: 1
+    priority: 0
+    anisotropy: 0
+    volumeMask: {fileID: 0}
+    textureScrollingSpeed: {x: 0, y: 0, z: 0}
+    textureTiling: {x: 1, y: 1, z: 1}
+    positiveFade: {x: 0.00001, y: 0.00001, z: 0.00001}
+    negativeFade: {x: 0.00001, y: 0.00001, z: 0.00001}
+    m_EditorUniformFade: 0.1
+    m_EditorPositiveFade: {x: 0.00001, y: 0.00001, z: 0.000010000001}
+    m_EditorNegativeFade: {x: 0.00001, y: 0.00001, z: 0.000010000001}
+    m_EditorAdvancedFade: 0
+    size: {x: 10000, y: 10000, z: 10000}
+    invertFade: 0
+    distanceFadeStart: 10000
+    distanceFadeEnd: 10000
+    textureOffset: {x: 0, y: 0, z: 0}
+    falloffMode: 0
+    maskMode: 0
+    materialMask: {fileID: 0}
+  m_Version: 2
+--- !u!4 &389837397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389837395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2479.5977, y: 90.054474, z: 235.14835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &399336617
 GameObject:
   m_ObjectHideFlags: 0
@@ -59203,9 +59271,9 @@ MonoBehaviour:
   cpuSimulation: 1
   cpuFullResolution: 0
   cpuEvaluateRipples: 0
-  timeMultiplier: 6.1
-  repetitionSize: 1106
-  largeWindSpeed: 110
+  timeMultiplier: 5.99
+  repetitionSize: 1061
+  largeWindSpeed: 28
   largeWindOrientationValue: 0
   largeCurrentSpeedValue: 11.05
   largeCurrentOrientationValue: 0
@@ -59219,7 +59287,7 @@ MonoBehaviour:
   largeBand1FadeStart: 300
   largeBand1FadeDistance: 800
   ripples: 1
-  ripplesWindSpeed: 8
+  ripplesWindSpeed: 8.1
   ripplesWindOrientationMode: 0
   ripplesWindOrientationValue: 0
   ripplesCurrentMode: 0
@@ -66590,15 +66658,15 @@ MonoBehaviour:
   m_MaxDepthBias: 0.001
   m_ShadowResolution:
     m_Override: 512
-    m_UseOverride: 1
-    m_Level: 0
+    m_UseOverride: 0
+    m_Level: 2
   m_ShadowDimmer: 1
   m_VolumetricShadowDimmer: 1
   m_ShadowFadeDistance: 10000
   m_UseContactShadow:
-    m_Override: 0
-    m_UseOverride: 1
-    m_Level: 0
+    m_Override: 1
+    m_UseOverride: 0
+    m_Level: 2
   m_RayTracedContactShadow: 0
   m_ShadowTint: {r: 0, g: 0, b: 0, a: 1}
   m_PenumbraTint: 0
@@ -66709,13 +66777,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001693795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28376168, y: -0.45952588, z: 0.23585509, w: 0.8078909}
+  m_LocalRotation: {x: 0.24479352, y: -0.21053788, z: 0.42713472, w: 0.84457445}
   m_LocalPosition: {x: -357.9, y: 250.8, z: 20.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 42.474, y: -55.607, z: 9.387}
+  m_LocalEulerAnglesHint: {x: 36.395, y: -10.487, z: 50.199}
 --- !u!1 &2002689280
 GameObject:
   m_ObjectHideFlags: 0
@@ -81573,3 +81641,4 @@ SceneRoots:
   - {fileID: 7530162500320255754}
   - {fileID: 1778482179909970179}
   - {fileID: 2031176988375159727}
+  - {fileID: 389837397}
