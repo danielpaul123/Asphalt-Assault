@@ -10,10 +10,12 @@ public class PanelButtons : MonoBehaviour
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
         Debug.Log("Lvl Restart");
+        Time.timeScale = 1f;
     }
     public void mainmenu()
     {
         SceneManager.LoadScene(0);
         Debug.Log("Loading Main Menu");
+        Time.timeScale = 1f;
     }
 }
