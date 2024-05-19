@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2704.8792, g: 2761.5042, b: 4069.3286, a: 1}
+  m_IndirectSpecularColor: {r: 2718.3167, g: 2723.2502, b: 3837.9692, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -40102,7 +40102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5490658, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: m_Mass
-      value: 300
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 10830420, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: m_Intensity
@@ -40190,7 +40190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11489280, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: carSetting.carPower
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11489280, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
       propertyPath: carSetting.carSteer
@@ -63339,7 +63339,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8065453335989045117}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 200
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -64025,7 +64025,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5685441312100333398}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 200
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -71343,7 +71343,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9052213792852385424}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 200
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
