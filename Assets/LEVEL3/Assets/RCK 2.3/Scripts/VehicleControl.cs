@@ -599,10 +599,12 @@ public class VehicleControl : MonoBehaviour
             if (brake || accel < 0 || speed < 1.0f)
             {
                 brakeLight.intensity = Mathf.MoveTowards(brakeLight.intensity, 8, 0.5f);
+                Debug.Log("Brake Light");
             }
             else
             {
                 brakeLight.intensity = Mathf.MoveTowards(brakeLight.intensity, 0, 0.5f);
+                 Debug.Log("Brake Light");
 
             }
 
