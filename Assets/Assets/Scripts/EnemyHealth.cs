@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
         }
 
         // Instantiate the prefab at the enemy's position and rotation
-        Instantiate(DestroyedPrefab, transform.position, transform.rotation);
+        GameObject destroyedInstance = Instantiate(DestroyedPrefab, transform.position, transform.rotation);
 
         // Play flame particle effect
         if (flameParticle != null)
@@ -47,5 +47,11 @@ public class EnemyHealth : MonoBehaviour
 
         // Destroy the enemy game object
         Destroy(gameObject);
+
+        // Destroy the instantiated destroyed prefab after 5 seconds
+        if (destroyedInstance != null)
+        {
+            Destroy(destroyedInstance, 5f);
+        }
     }
 }
