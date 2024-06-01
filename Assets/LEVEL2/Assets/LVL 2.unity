@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2720.1506, g: 2728.2502, b: 3852.9927, a: 1}
+  m_IndirectSpecularColor: {r: 2718.7659, g: 2724.8752, b: 3843.6958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -69908,7 +69908,7 @@ MonoBehaviour:
   currentHealth: 0
   DestroyedPrefab: {fileID: 3475257252727549431, guid: 9f294a468823cf0439735bc3e250e365,
     type: 3}
-  destroySound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
   flameParticle: {fileID: 0}
 --- !u!33 &4063545578894164566
 MeshFilter:
@@ -71372,7 +71372,7 @@ MonoBehaviour:
   currentHealth: 0
   DestroyedPrefab: {fileID: 5442699314553547674, guid: d4c5bd4665980dd41978e41c27460c43,
     type: 3}
-  destroySound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
   flameParticle: {fileID: 0}
 --- !u!4 &5221980927269386060
 Transform:
@@ -73601,7 +73601,7 @@ MonoBehaviour:
   currentHealth: 0
   DestroyedPrefab: {fileID: 1971697862099735791, guid: 4fe9f1a9a9b6a0a44aaa0447cca26ba9,
     type: 3}
-  destroySound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
   flameParticle: {fileID: 0}
 --- !u!33 &7208773449445349050
 MeshFilter:

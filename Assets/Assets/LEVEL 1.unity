@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1486.2501, g: 1616.3225, b: 2411.176, a: 1}
+  m_IndirectSpecularColor: {r: 1485.9152, g: 1615.7756, b: 2409.6057, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -73485,8 +73485,9 @@ MonoBehaviour:
   currentHealth: 0
   DestroyedPrefab: {fileID: 1971697862099735791, guid: 4fe9f1a9a9b6a0a44aaa0447cca26ba9,
     type: 3}
-  destroySound: {fileID: 0}
-  flameParticle: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
+  flameParticle: {fileID: 8295591563862043289, guid: e01f2e62cf41a3449be2dade3b2c2d79,
+    type: 3}
 --- !u!4 &757084612754418827
 Transform:
   m_ObjectHideFlags: 0
@@ -76100,7 +76101,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bc437131b87dc044badc617ffbd875e2, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -77968,7 +77969,8 @@ MonoBehaviour:
   DestroyedPrefab: {fileID: 3475257252727549431, guid: 9f294a468823cf0439735bc3e250e365,
     type: 3}
   destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
-  flameParticle: {fileID: 0}
+  flameParticle: {fileID: 8295591563862043289, guid: e01f2e62cf41a3449be2dade3b2c2d79,
+    type: 3}
 --- !u!1 &3756718890320504500
 GameObject:
   m_ObjectHideFlags: 0
@@ -78330,8 +78332,9 @@ MonoBehaviour:
   currentHealth: 0
   DestroyedPrefab: {fileID: 5442699314553547674, guid: d4c5bd4665980dd41978e41c27460c43,
     type: 3}
-  destroySound: {fileID: 0}
-  flameParticle: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: b960ee0876e7cdd469dd249637610ceb, type: 3}
+  flameParticle: {fileID: 8295591563862043289, guid: e01f2e62cf41a3449be2dade3b2c2d79,
+    type: 3}
 --- !u!4 &4094436574221204335
 Transform:
   m_ObjectHideFlags: 0
@@ -80910,7 +80913,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bc437131b87dc044badc617ffbd875e2, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

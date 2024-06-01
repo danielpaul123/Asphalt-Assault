@@ -30,28 +30,32 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        // Play destroy sound
-        if (destroySound != null && audioSource != null)
+        // Play destroy sound from the destroyed instance
+        GameObject destroyedInstance = Instantiate(DestroyedPrefab, transform.position, transform.rotation);
+        if (destroySound != null && destroyedInstance != null)
         {
-            audioSource.PlayOneShot(destroySound);
+            AudioSource destroyedAudioSource = destroyedInstance.AddComponent<AudioSource>();
+            destroyedAudioSource.clip = destroySound;
+            destroyedAudioSource.Play();
         }
 
-        // Instantiate the prefab at the enemy's position and rotation
-        GameObject destroyedInstance = Instantiate(DestroyedPrefab, transform.position, transform.rotation);
-
-        // Play flame particle effect
+        // Instantiate and play flame particle effect from a separate game object
         if (flameParticle != null)
         {
-            Instantiate(flameParticle, transform.position, Quaternion.identity);
+            ParticleSystem flameInstance = Instantiate(flameParticle, transform.position, Quaternion.identity);
+            flameInstance.Play();
+            Destroy(flameInstance.gameObject, flameInstance.main.duration + flameInstance.main.startLifetime.constantMax);
         }
 
         // Destroy the enemy game object
         Destroy(gameObject);
 
-        // Destroy the instantiated destroyed prefab after 5 seconds
+        // Destroy the instantiated destroyed prefab after the sound has played
         if (destroyedInstance != null)
         {
-            Destroy(destroyedInstance, 5f);
+            Destroy(destroyedInstance, destroySound.length);
         }
     }
+
+
 }
